@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { sortComponent } from './sort-component.component';
+import { gridComponent } from './grid-component.component';
 
-describe('ChildComponent2Component', () => {
-  let component: sortComponent;
-  let fixture: ComponentFixture<sortComponent>;
+describe('FeatureComponentComponent', () => {
+  let component: gridComponent;
+  let fixture: ComponentFixture<gridComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ sortComponent ]
+      declarations: [ gridComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(sortComponent);
+    fixture = TestBed.createComponent(gridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

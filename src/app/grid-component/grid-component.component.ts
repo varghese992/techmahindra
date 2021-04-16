@@ -6,11 +6,11 @@ interface Item {
   color: string;
 }
 @Component({
-  selector: 'app-shuffle-component',
-  templateUrl: './shuffle-component.component.html',
-  styleUrls: ['./shuffle-component.component.css']
+  selector: 'app-grid-component',
+  templateUrl: './grid-component.component.html',
+  styleUrls: ['./grid-component.component.css']
 })
-export class shuffleComponent implements OnInit {
+export class gridComponent implements OnInit {
 
   public grid: Item[] = [];
   public randomFlag:boolean;

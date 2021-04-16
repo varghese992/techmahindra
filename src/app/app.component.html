@@ -3,6 +3,6 @@
     <button (click)="shuffle()" [ngClass]="shuffleDisable ? 'disabledClass' :'' ">SHUFFLE</button>
     <button (click)="sort()" [ngClass]="sortDisable ? 'disabledClass' : '' ">SORT</button>
   </div>
-  <app-shuffle-component [data]="grid"></app-shuffle-component>
-  <app-sort-component [data]="vertical"></app-sort-component>
+  <app-grid-component [data]="grid"></app-grid-component>
+  <app-vertical-component [data]="vertical"></app-vertical-component>
 </div>

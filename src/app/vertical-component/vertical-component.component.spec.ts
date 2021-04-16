@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { shuffleComponent } from './shuffle-component.component';
+import { verticalComponent } from './vertical-component.component';
 
-describe('FeatureComponentComponent', () => {
-  let component: shuffleComponent;
-  let fixture: ComponentFixture<shuffleComponent>;
+describe('ChildComponent2Component', () => {
+  let component: verticalComponent;
+  let fixture: ComponentFixture<verticalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ shuffleComponent ]
+      declarations: [ verticalComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(shuffleComponent);
+    fixture = TestBed.createComponent(verticalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

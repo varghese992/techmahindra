@@ -5,11 +5,11 @@ interface Item {
   color: string;
 }
 @Component({
-  selector: 'app-sort-component',
-  templateUrl: './sort-component.component.html',
-  styleUrls: ['./sort-component.component.css']
+  selector: 'app-vertical-component',
+  templateUrl: './vertical-component.component.html',
+  styleUrls: ['./vertical-component.component.css']
 })
-export class sortComponent implements OnInit {
+export class verticalComponent implements OnInit {
   @Input('data')   set grids(data: any) {
     this.grid = data;
   } 
