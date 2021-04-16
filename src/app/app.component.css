@@ -29,15 +29,3 @@ button {
   cursor:not-allowed;
   pointer-events: none;
 }
-
-  .cell:nth-child(3) {
-    margin-right: 0;
-  }
-  
-  .cell:nth-child(27) { 
-    margin-bottom: 0;
-  }
-  
-  .flip-list {
-    transition: transform .5s ease-in-out;
-  }

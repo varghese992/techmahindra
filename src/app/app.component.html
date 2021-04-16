@@ -1,10 +1,9 @@
-<div class="demo">
+<div class="main-container">
   <div class="button-container">
     <button (click)="shuffle()" [ngClass]="shuffleDisable ? 'disabledClass' 
    :'' ">SHUFFLE</button>
     <button (click)="sort()" [ngClass]="sortDisable ? 'disabledClass' : '' ">SORT</button>
   </div>
-<app-shuffle-component [data]= "grid"></app-shuffle-component>
-<app-sort-component [data]= "vertical"></app-sort-component>
+  <app-shuffle-component [data]="grid"></app-shuffle-component>
+  <app-sort-component [data]="vertical"></app-sort-component>
 </div>
-
