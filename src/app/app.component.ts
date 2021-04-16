@@ -30,12 +30,27 @@ export class AppComponent {
 
   public initGrid(): void {    // Initialising the data on page load
     this.grid = this.gridItems;
-    this.vertical = this.gridItems;
+    this.vertical = this.shuffleData(this.gridItems);
   }
 
   public shuffle(): void {   // To shuffle the data inside the grid/ vertical content
     this.sortCounter = 0;
-    const length = this.grid == null ? 0 : this.grid.length
+    if (this.shuffleCounter < 1) {
+      this.grid = this.shuffleData(this.grid);
+      this.sortDisable = false;
+    }
+    else {
+      this.vertical = this.shuffleData(this.grid);
+    }
+    this.shuffleCounter++;
+    if (this.shuffleCounter > 1) {
+      this.shuffleDisable = true;
+      this.reset();
+    }
+  }
+
+  public shuffleData(grid){
+    const length = grid == null ? 0 : grid.length
     if (!length) {
       this.grid = [];
     }
@@ -48,19 +63,7 @@ export class AppComponent {
       result[rand] = result[index]
       result[index] = value
     }
-    if (this.shuffleCounter < 1) {
-      this.vertical = result;
-      this.grid = result;
-      this.sortDisable = false;
-    }
-    else {
-      this.vertical = result;
-    }
-    this.shuffleCounter++;
-    if (this.shuffleCounter > 1) {
-      this.shuffleDisable = true;
-      this.reset();
-    }
+    return result;
   }
 
   public sort() {     // To sort the content which is shuffled by clicking the shuffle button
