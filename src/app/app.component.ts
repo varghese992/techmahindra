@@ -13,7 +13,6 @@ interface Item {    // Interface for the item object used for individual cell
 })
 export class AppComponent {
 
-  public items: Item[];
   public grid: Item[] = [];
   public vertical: Item[] = [];
   public randomFlag: boolean;
