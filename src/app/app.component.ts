@@ -25,6 +25,7 @@ export class AppComponent {
 
   constructor() {
     this.initGrid();
+    this.shuffle();
   }
 
   public initGrid(): void {    // Initialising the data on page load
@@ -48,7 +49,7 @@ export class AppComponent {
       result[index] = value
     }
     if (this.shuffleCounter < 1) {
-      this.vertical = this.gridItems;
+      this.vertical = result;
       this.grid = result;
       this.sortDisable = false;
     }
