@@ -21,7 +21,6 @@ export class AppComponent {
   public sortCounter = 0;
   public shuffleDisable: boolean;    /* Boolean variables for handling the button status in UI*/
   public sortDisable: boolean;
-  public gridItems = [{ color: "#72C3DC", id: 1 }, { color: "#2B8EAD", id: 2 }, { color: "#334433", id: 3 }, { color: "#6F98A8", id: 4 }, { color: "#334433", id: 5 }, { color: "#BFBFBF", id: 6 }, { color: "#BFBEBF", id: 7 }, { color: "#72C3DE", id: 8 }, { color: "#334433", id: 9 }];     // Represents the mock data for loading the page and performing the actions
 
   constructor(private logicService: logicService) {
   }
@@ -30,8 +29,8 @@ export class AppComponent {
   }
 
   public initGrid(): void {    // Initialising the data on page load
-    this.grid = this.logicService.shuffleData(this.gridItems);
-    this.vertical = this.logicService.shuffleData(this.gridItems);
+    this.grid = this.logicService.shuffleData(this.logicService.getGridItems());
+    this.vertical = this.logicService.shuffleData(this.logicService.getGridItems());
   }
 
   public shuffle(): void {   // To shuffle the data inside the grid/ vertical content

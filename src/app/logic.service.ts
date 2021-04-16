@@ -27,4 +27,9 @@ export class logicService {
     });
     return data;
   }
+
+  getGridItems(){     // Represents the mock data for loading the page and performing the actions
+    var gridItems = [{ color: "#72C3DC", id: 1 }, { color: "#2B8EAD", id: 2 }, { color: "#334433", id: 3 }, { color: "#6F98A8", id: 4 }, { color: "#334433", id: 5 }, { color: "#BFBFBF", id: 6 }, { color: "#BFBEBF", id: 7 }, { color: "#72C3DE", id: 8 }, { color: "#334433", id: 9 }]; 
+   return gridItems;
+  }
 }
