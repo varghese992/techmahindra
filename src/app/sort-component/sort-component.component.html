@@ -1,0 +1,11 @@
+<div class="sort-container">
+  <div class="cell-container1">
+      <div [style.background-color]="item.color" class="cellSortColor" *ngFor="let item of grid; let i = index ">
+        </div>
+  </div>
+<div class="cell-container2">
+    <div  class="cellSort" *ngFor="let item of grid; let i = index ">
+        {{ item.id }}
+    </div>
+  </div>
+</div>

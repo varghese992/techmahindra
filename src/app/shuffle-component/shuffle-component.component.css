@@ -1,0 +1,20 @@
+.shuffle-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 329px;
+    margin-top: 10px;
+  } 
+    
+  .cellShuffle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    font-family: cursive;
+    color: honeydew;
+    border: 1px solid #aaa;
+    margin-right: -1px;
+    margin-bottom: -1px;
+  }

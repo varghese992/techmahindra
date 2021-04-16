@@ -1,0 +1,43 @@
+.demo{
+    display: flex;
+    margin-top: 139px;
+    margin-left: 417px;
+}
+.button-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 170px;
+  margin-top: -87px;
+  position: absolute;
+}
+button {
+  background-color: #72C3DC; /* Blue */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 4px #888888;
+  color: white;
+  font-weight: bolder;
+}
+.disabledClass{
+  opacity: 0.1;
+  cursor:not-allowed;
+  pointer-events: none;
+}
+
+  .cell:nth-child(3) {
+    margin-right: 0;
+  }
+  
+  .cell:nth-child(27) { 
+    margin-bottom: 0;
+  }
+  
+  .flip-list {
+    transition: transform .5s ease-in-out;
+  }

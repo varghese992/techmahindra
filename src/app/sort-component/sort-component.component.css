@@ -1,0 +1,28 @@
+.sort-container {
+    display: flex;
+    width: 166px;
+    margin-top: 10px;
+  }
+  .cellSortColor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 7px;
+    height: 32px;
+    border: 1px solid #aaa;
+    margin-right: -1px;
+    margin-bottom: -1px;
+  }
+    
+  .cellSort {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 32px;
+    border: 1px solid #aaa;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    border-color : dimgray;
+  }
+  
