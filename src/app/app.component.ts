@@ -25,11 +25,12 @@ export class AppComponent {
 
   constructor() {
     this.initGrid();
-    this.shuffle();
+  //  this.shuffle();
   }
 
+
   public initGrid(): void {    // Initialising the data on page load
-    this.grid = this.gridItems;
+    this.grid = this.shuffleData(this.gridItems);
     this.vertical = this.shuffleData(this.gridItems);
   }
 
